@@ -1,0 +1,3 @@
+rem 开始安装依赖...
+..\env\node-v18.16.1-win-x64\npm.cmd install
+pause
