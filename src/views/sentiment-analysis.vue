@@ -9,7 +9,7 @@
 				<Button style="margin-left: 8px" @click="handleReset">Reset</Button>
 			</FormItem>
 		</Form>
-		<DescriptionList title="评分结果">
+		<DescriptionList title="Scoring Result">
 			<Description term="sentiment : ">
 				{{ this.analysisResult.sentiment }}
 			</Description>
