@@ -1050,7 +1050,7 @@ export default {
               silent: true,
 
               data: [{
-                name: '评分标准',
+                name: 'Grading',
                 yAxis: 0.5,
                 lineStyle: {
                   color: 'rgba(119,212,245,1)'
@@ -1206,7 +1206,7 @@ export default {
               silent: true,
 
               data: [{
-                name: '评分标准',
+                name: 'Grading',
                 yAxis: 0.5,
                 lineStyle: {
                   color: 'rgba(119,212,245,1)'
