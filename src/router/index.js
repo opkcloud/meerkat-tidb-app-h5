@@ -10,12 +10,12 @@ const routes = [
 	children: [
 		{
 		  path: '/sentiment-analysis',
-		  name: 'Data Analysis',
+		  name: 'Emotional Scoring',
 		  component: () => import('@/views/sentiment-analysis.vue')
 		},
 		{
 		  path: '/olap',
-		  name: 'Emotional Scoring',
+		  name: 'Data Analysis',
 		  component: () => import('@/views/olap.vue')
 		}
 	]
