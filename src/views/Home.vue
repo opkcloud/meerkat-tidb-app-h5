@@ -63,11 +63,11 @@
 						</MenuItem> -->
 						<MenuItem name="1">
 						<Icon type="ios-navigate"></Icon>
-							<router-link to="/sentiment-analysis">情感打分</router-link>
+							<router-link to="/sentiment-analysis">Emotional Scoring</router-link>
 						</MenuItem>
 						<MenuItem name="2">
 						<Icon type="ios-navigate"></Icon>
-							<router-link to="/olap">数据分析</router-link>
+							<router-link to="/olap">Data Analysis</router-link>
 						</MenuItem>
 					</div>
 				</Menu>

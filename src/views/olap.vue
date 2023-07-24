@@ -4,7 +4,7 @@
 			<div id="pieChart" style="width: 1000px;height:600px;"></div>
 		</Card>
 		<Card>
-			<Form ref="queryReq" :model="barArrReq" :label-width="100" inline class="form">
+			<Form ref="queryReq" :model="barArrReq" :label-width="150" inline class="form">
                 <FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
                     <DatePicker type="date" v-model="barArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="barArrReq.endTime" placeholder="end date" style="width: 200px" />
@@ -16,7 +16,7 @@
 			<div id="barChart" style="width: 1000px;height:600px;"></div>
 		</Card>
 		<Card>
-			<Form ref="queryReq" :model="multiBarArrReq" :label-width="100" inline class="form">
+			<Form ref="queryReq" :model="multiBarArrReq" :label-width="150" inline class="form">
                 <FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
                     <DatePicker type="date" v-model="multiBarArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="multiBarArrReq.endTime" placeholder="end date" style="width: 200px" />
@@ -28,7 +28,7 @@
 			<div id="multiBar" style="width: 1000px;height:600px;"></div>
 		</Card>
 		<Card>
-			<Form ref="queryReq" :model="lineArrReq" :label-width="100" inline class="form">
+			<Form ref="queryReq" :model="lineArrReq" :label-width="150" inline class="form">
 				<FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
 					<DatePicker type="date" v-model="lineArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="lineArrReq.endTime" placeholder="end date" style="width: 200px" />
@@ -40,7 +40,7 @@
 			<div id="lineChart" style="width: 1000px;height:600px;"></div>
 		</Card>
     <Card>
-      <Form ref="queryReq" :model="lineModel" :label-width="100" inline class="form">
+      <Form ref="queryReq" :model="lineModel" :label-width="150" inline class="form">
         <FormItem label="Stock Name:">
           <Select v-model="lineModel.stockName" style="width:150px" clearable>
             <Option v-for="item in stockTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
@@ -57,7 +57,7 @@
       <div id="StockProbabilityLine" style="width: 1000px;height:600px;"></div>
     </Card>
     <Card>
-      <Form ref="queryReq" :model="tradeDateAvgReq" :label-width="100" inline class="form">
+      <Form ref="queryReq" :model="tradeDateAvgReq" :label-width="150" inline class="form">
         <FormItem label="Stock Name:">
           <Select v-model="tradeDateAvgReq.stockName" style="width:150px" clearable>
             <Option v-for="item in stockTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
