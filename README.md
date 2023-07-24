@@ -1,44 +1,11 @@
-# view-ui-project-vite
-This project build for Vue3, Vue-router, Vuex, ViewUIPlus and Vite.
-## Install
-```shell
-npm install
-```
-## Run
-```shell
-npm run serve
-```
-## Build
-### Build for Production
-```shell
-npm run build
-```
-### Build for Staging
-```shell
-npm run build:staging
-```
-## Preview
-### Preview for Production
-```shell
-npm run preview
-```
-### Preview for Staging
-```shell
-npm run preview:staging
-```
-## Run Eslint
-### Run without Fixing
 
-- This operation will also run before git-commit.
 ```shell
-npm run lint
+1. 在项目根目录打开命令行窗口，执行 npm isntall，安装项目项目相关依赖；
+2. 命令行窗口执行 npm run dev，启动前端工程；
+3. 项目启动成功后，将在默认浏览器中打开前端项目页面；
 ```
-### Run with Fixing
-```shell
-npm run lint:fix
+```agsl
+1. Open a command line window in the project root directory, execute 'npm isntall', and install project-related dependencies;
+2. Execute 'npm run dev' in the command line window to start the front-end project;
+3. After the project is started successfully, the front-end project page will be opened in the default browser;
 ```
-## .env Description
-
-- This project exposes environment variables on `import.meta.env` object.
-- Different modes (development/staging/production) correspond to different environment files (.env.*).
-- .env file is always included, duplicate variables are overwritten by the specific mode file (.env.*).

@@ -4,18 +4,18 @@ import Home from '@/views/Home.vue'
 const routes = [
   {
     path: '/',
-    name: '首页',
+    name: 'Front Page',
     component: () => import('@/views/Home.vue'),
     // redirect: "/sentiment-analysis",
 	children: [
 		{
 		  path: '/sentiment-analysis',
-		  name: '情感分析',
+		  name: 'Data Analysis',
 		  component: () => import('@/views/sentiment-analysis.vue')
 		},
 		{
 		  path: '/olap',
-		  name: '数据分析',
+		  name: 'Emotional Scoring',
 		  component: () => import('@/views/olap.vue')
 		}
 	]

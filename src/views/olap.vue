@@ -5,7 +5,7 @@
 		</Card>
 		<Card>
 			<Form ref="queryReq" :model="barArrReq" :label-width="100" inline class="form">
-                <FormItem label="日期范围：" prop="sqlScript" style="width: 700px">
+                <FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
                     <DatePicker type="date" v-model="barArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="barArrReq.endTime" placeholder="end date" style="width: 200px" />
 				</FormItem>
@@ -17,7 +17,7 @@
 		</Card>
 		<Card>
 			<Form ref="queryReq" :model="multiBarArrReq" :label-width="100" inline class="form">
-                <FormItem label="日期范围：" prop="sqlScript" style="width: 700px">
+                <FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
                     <DatePicker type="date" v-model="multiBarArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="multiBarArrReq.endTime" placeholder="end date" style="width: 200px" />
 				</FormItem>
@@ -29,7 +29,7 @@
 		</Card>
 		<Card>
 			<Form ref="queryReq" :model="lineArrReq" :label-width="100" inline class="form">
-				<FormItem label="日期范围：" prop="sqlScript" style="width: 700px">
+				<FormItem label="Date Range：" prop="sqlScript" style="width: 700px">
 					<DatePicker type="date" v-model="lineArrReq.startTime" placeholder="start date" style="width: 200px" /> ~
 					<DatePicker type="date" v-model="lineArrReq.endTime" placeholder="end date" style="width: 200px" />
 				</FormItem>
@@ -46,7 +46,7 @@
             <Option v-for="item in stockTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
         </FormItem>
-        <FormItem label="日期范围：" prop="sqlScript" style="width: 500px">
+        <FormItem label="Date Range：" prop="sqlScript" style="width: 500px">
             <DatePicker type="date" v-model="lineModel.startTime" placeholder="start date" style="width: 180px" /> ~
 			<DatePicker type="date" v-model="lineModel.endTime" placeholder="end date" style="width: 180px" />
 		</FormItem>
@@ -63,7 +63,7 @@
             <Option v-for="item in stockTypeList" :value="item.value" :key="item.value">{{ item.label }}</Option>
         </Select>
         </FormItem>
-        <FormItem label="日期范围：" prop="sqlScript" style="width: 500px">
+        <FormItem label="Date Range：" prop="sqlScript" style="width: 500px">
             <DatePicker type="date" v-model="tradeDateAvgReq.startTime" placeholder="start date" style="width: 180px" /> ~
 			<DatePicker type="date" v-model="tradeDateAvgReq.endTime" placeholder="end date" style="width: 180px" />
 		</FormItem>
@@ -199,7 +199,7 @@ export default {
       const option = {
         backgroundColor: '#354061',
         title: {
-          text: '每日评论量统计',
+          text: 'Daily comment volume statistics',
           x: '2%',
           y: '4%',
           textStyle: {

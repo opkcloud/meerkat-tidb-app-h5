@@ -85,8 +85,7 @@
 					</div>
 				</Card>
 			</Content>
-			<Footer class="layout-footer-center">2023 &copy; Meerkat |
-				<a href="" @click="contactUs()">联系我们</a></Footer>
+			<Footer class="layout-footer-center">2023 &copy; Meerkat </Footer>
 		</Layout>
 	</div>
 </template>
