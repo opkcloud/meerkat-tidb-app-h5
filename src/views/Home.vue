@@ -63,7 +63,7 @@
 						</MenuItem> -->
 						<MenuItem name="1">
 						<Icon type="ios-navigate"></Icon>
-							<router-link to="/sentiment-analysis">Emotional Scoring</router-link>
+							<router-link to="/sentiment-analysis">Sentiment Scoring</router-link>
 						</MenuItem>
 						<MenuItem name="2">
 						<Icon type="ios-navigate"></Icon>

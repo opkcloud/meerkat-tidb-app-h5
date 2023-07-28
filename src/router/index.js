@@ -10,7 +10,7 @@ const routes = [
 	children: [
 		{
 		  path: '/sentiment-analysis',
-		  name: 'Emotional Scoring',
+		  name: 'Sentiment Scoring',
 		  component: () => import('@/views/sentiment-analysis.vue')
 		},
 		{
