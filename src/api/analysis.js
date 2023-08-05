@@ -72,6 +72,9 @@ export const getTradeDateAvgProbability = (params) => {
     })
 }
 
+/**
+ * 获取单个句的得分（持久化）
+ */
 export const sentimentAnalysisAndSave = (text) => {
     return service.request({
         url: '/sentimentAnalysisAndSave',
@@ -79,5 +82,15 @@ export const sentimentAnalysisAndSave = (text) => {
         params: {
             text: text
         }
+    })
+}
+
+/**
+ * 查询股票评论数量
+ */
+export const getStockCommentTotalCount = () => {
+    return service.request({
+        url: '/getStockCommentTotalCount',
+        method: 'get'
     })
 }

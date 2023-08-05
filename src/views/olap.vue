@@ -47,8 +47,8 @@
         </Select>
         </FormItem>
         <FormItem label="Date Range：" prop="sqlScript" style="width: 500px">
-            <DatePicker type="date" v-model="lineModel.startTime" placeholder="start date" style="width: 180px" /> ~
-			<DatePicker type="date" v-model="lineModel.endTime" placeholder="end date" style="width: 180px" />
+            <DatePicker type="date" v-model="lineModel.startTime" placeholder="start date" style="width: 150px" /> ~
+			<DatePicker type="date" v-model="lineModel.endTime" placeholder="end date" style="width: 150px" />
 		</FormItem>
 		<FormItem>
 			<Button type="primary" icon="ios-search" @click="getStockAndProbability()">Search</Button>
@@ -64,12 +64,12 @@
         </Select>
         </FormItem>
         <FormItem label="Date Range：" prop="sqlScript" style="width: 500px">
-            <DatePicker type="date" v-model="tradeDateAvgReq.startTime" placeholder="start date" style="width: 180px" /> ~
-			<DatePicker type="date" v-model="tradeDateAvgReq.endTime" placeholder="end date" style="width: 180px" />
-		</FormItem>
-		<FormItem style="width: 100px">
-			<Button type="primary" icon="ios-search" @click="getTradeDateAvgProbability()">Search</Button>
-		</FormItem>
+          <DatePicker type="date" v-model="tradeDateAvgReq.startTime" placeholder="start date" style="width: 150px" /> ~
+          <DatePicker type="date" v-model="tradeDateAvgReq.endTime" placeholder="end date" style="width: 150px" />
+        </FormItem>
+        <FormItem style="width: 100px">
+          <Button type="primary" icon="ios-search" @click="getTradeDateAvgProbability()">Search</Button>
+        </FormItem>
       </Form>
       <div id="tradeDateAvgProbabilityLine" style="width: 1000px;height:600px;"></div>
     </Card>
@@ -97,32 +97,32 @@ export default {
       barArrReq: {
         startTime: '2015-01-01',
         endTime: '2015-03-31'
-	  },
-	  multiBarArrReq: {
-		startTime: '2015-01-01',
-        endTime: '2015-01-15'
-	  },
-	  lineArrReq: {
-		startTime: '2015-01-01',
-        endTime: '2015-01-20'
-	  },
+      },
+      multiBarArrReq: {
+      startTime: '2015-01-01',
+          endTime: '2015-01-15'
+      },
+      lineArrReq: {
+      startTime: '2015-01-01',
+          endTime: '2015-01-20'
+      },
       barArr: {
         dateArr: [],
         applArr: [],
         amznArr: [],
         googArr: [],
         msftArr: [],
-		tslaArr: [],
-		stockTypeList: []
-	  },
-	  lineChartArr: {
-        dateArr: [],
-        applArr: [],
-        amznArr: [],
-        googArr: [],
-        msftArr: [],
-		tslaArr: [],
-		stockTypeList: []
+      tslaArr: [],
+      stockTypeList: []
+      },
+      lineChartArr: {
+          dateArr: [],
+          applArr: [],
+          amznArr: [],
+          googArr: [],
+          msftArr: [],
+          tslaArr: [],
+          stockTypeList: []
       },
       interval: null,
       stockTypeList: [],
@@ -1398,8 +1398,8 @@ export default {
     // this.stockTypeList = []
     this.drawPieChartMethod()
     this.drawBarChartMethod()
-	this.drawMultiBarMethod()
-	this.drawLineChartMethod()
+	  this.drawMultiBarMethod()
+	  this.drawLineChartMethod()
     this.getStockName()
     this.getStockAndProbability()
     this.StockProbabilityLine()
